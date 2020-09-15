@@ -43,6 +43,15 @@ namespace Eszter_2020._09._08
                 tomb[i] = veletlen.Next(1,101);
                 Console.Write($"{tomb[i]} ");
             }
+            //Lineáris rendezés
+            //Külsö for ciklus: kiválasszuk a legelső elemet, majd ezt hasonlítjuk az összes többi elemhez!
+            for (int i = 0;i<tomb.Length-1;i++)
+            {
+                for(int j = i+1; j < tomb.Length; j++)
+                {
+
+                }
+            }
             Console.ReadKey();
         }
     }
