@@ -45,12 +45,25 @@ namespace Eszter_2020._09._08
             }
             //Lineáris rendezés
             //Külsö for ciklus: kiválasszuk a legelső elemet, majd ezt hasonlítjuk az összes többi elemhez!
+            Console.WriteLine();
+            int csere;
             for (int i = 0;i<tomb.Length-1;i++)
             {
                 for(int j = i+1; j < tomb.Length; j++)
                 {
-
+                    if (tomb[i] > tomb[j])
+                    {
+                         csere = tomb[j];
+                         tomb[j] = tomb[i];
+                         tomb[i] = csere;
+                         //Console.Write($"{tomb[i]} ");
+                    }                  
                 }
+            }
+            Console.WriteLine();
+            for (int i = 0;i<tomb.Length;i++)
+            {
+                Console.Write($"{tomb[i]} ");
             }
             Console.ReadKey();
         }
