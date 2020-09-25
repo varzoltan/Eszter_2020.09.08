@@ -55,10 +55,17 @@ namespace Eszter_2020._09._08
                     {
                          csere = tomb[j];
                          tomb[j] = tomb[i];
-                         tomb[i] = csere;
-                         Console.Write($"{tomb[i]} ");
+                         tomb[i] = csere;                      
                     }                  
-                }              
+                }
+                if (i < tomb.Length - 2)
+                {
+                    Console.Write($"{tomb[i]} ");
+                }
+                else
+                {
+                    Console.Write($"{tomb[i]} {tomb[i + 1]}");
+                }
             }
             /*Console.WriteLine();
             for (int i = 0;i<tomb.Length;i++)
